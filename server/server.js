@@ -19,13 +19,13 @@ app.use(cookieParser());
 
 // CORS IS FOR US TO CONNECT WITH THE CLIENT SIDE
 // YOU HAVE TO SET CREDENTIALS: TRUE TO PASS COOKIES FROM CLIENT TO SERVER
-// app.use(cors({origin: ["http://localhost:5173", "http://localhost:5174"], credentials: true}))
-app.use(
-    cors({
-      origin: true,
-      credentials: true,
-    })
-  );
+app.use(cors({origin: "https://hirely-test-5talga0zg-anushkas-projects-42e01347.vercel.app", credentials: true}))
+// app.use(
+//     cors({
+//       origin: true,
+//       credentials: true,
+//     })
+//   );
   
  
 app.get('/', (req, res) => {
